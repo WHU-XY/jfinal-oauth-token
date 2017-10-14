@@ -64,7 +64,6 @@ public class OAuthAPIController extends BaseAPIController {
 		} else {
 			Db.update("UPDATE stp_api_user_token set token=? where username=?", token, username);
 		}
-
 		/*
 		 * Map<String, Object> userInfo = new HashMap<String,
 		 * Object>(nowUser.getAttrs());
